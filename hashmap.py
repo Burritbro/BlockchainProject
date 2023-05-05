@@ -36,19 +36,6 @@ class Hashmap:
 
         return bucket[key]
 
-        # found_key = False
-
-        # for index, record in enumerate(bucket):
-        #     searching_key, searching_val = record
-        #
-        #     if searching_key == key:
-        #         found_key = True
-        #         break
-        #
-        # if found_key:
-        #     return searching_val
-        # else:
-        #     return "No value found"
 
     def delete_val(self, key):
         """functionality for delete"""
