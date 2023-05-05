@@ -72,7 +72,7 @@ class Blockchain():
     '''Contains the chain of blocks.'''
 
     #########################
-    # Do not use these three values in any code that you write. 
+     
     _ROOT_BC_USER = "ROOT"  # Name of root user account.
     _BLOCK_REWARD = 1000  # Amount of HuskyCoin given as a reward for mining a block
     _TOTAL_AVAILABLE_TOKENS = 999999  # Total balance of HuskyCoin that the ROOT user receives in block0
@@ -80,12 +80,12 @@ class Blockchain():
     #########################
 
     def __init__(self):
-        self._blockchain = list()  # Use the Python List for the chain of blocks
+        self._blockchain = list()  
         self._bc_ledger = Ledger()  # The ledger of HuskyCoin balances
-        # Create the initial block0 of the blockchain, also called the "genesis block"
+        # Create the initial block0 
         self._create_genesis_block()
 
-    # This method is complete. No additional code needed.
+    
     def _create_genesis_block(self):
         '''Creates the initial block in the chain.
         This is NOT how a blockchain usually works, but it is a simple way to give the
@@ -95,7 +95,7 @@ class Blockchain():
         self._blockchain.append(block0)
         self._bc_ledger.deposit(self._ROOT_BC_USER, self._TOTAL_AVAILABLE_TOKENS)
 
-    # This method is complete. No additional code needed.
+  
     def distribute_mining_reward(self, user):
         '''
         You need to give HuskyCoin to some of your users before you can transfer HuskyCoing
